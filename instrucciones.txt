@@ -1,0 +1,68 @@
+
+*******************************************************************
+CREAR EL PLUGIN PARA CÓRDOVA
+*******************************************************************
+
+1.- Instalar Plugman
+npm install -g plugman
+
+
+2.- Crear el plugin desde el CMD
+plugman create --name MiPlugin --plugin_id org.example.miplugin --plugin_version 0.0.1
+
+
+3.- Agregar plataforma de ejecución
+plugman platform add --platform_name android
+
+
+4.- Agregar el package.json
+npm init
+
+
+5.- Ejemplificación del archivo package.json
+{
+  "name": "mi-plugin",
+  "version": "0.0.1",
+  "description": "Un plugin de Cordova que saluda a los usuarios",
+  "cordova": {
+    "id": "org.example.miplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "plugin"
+  ],
+  "author": "Tu Nombre",
+  "license": "ISC"
+}
+
+
+
+
+*******************************************************************
+CREAR APK CÓRDOVA
+*****************************************************************
+
+1.- Crear la aplicación
+cordova create prueba com.example.prueba PruebaSaludar
+
+
+2.- Agregar plataforma de ejecución
+cordova platform add android
+
+
+3.- Instalar el plugin desde Github
+cordova plugin add "https://github.com/Chuck-1992/saludar"
+
+
+4.- Generar el APK
+cordova build android
+cordova emulate android   |     cordova run android
+
+
+
+
+
+
