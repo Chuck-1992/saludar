@@ -1,0 +1,18 @@
+{
+  "name": "mi-plugin",
+  "version": "0.0.1",
+  "description": "Un plugin de Cordova que saluda a los usuarios",
+  "cordova": {
+    "id": "org.example.miplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "plugin"
+  ],
+  "author": "Tu Nombre",
+  "license": "ISC"
+}
+
