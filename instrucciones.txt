@@ -56,6 +56,16 @@ cordova platform add android
 3.- Instalar el plugin desde Github
 cordova plugin add "https://github.com/Chuck-1992/saludar"
 
+4.- Crear configuración de  gradle en el proyecto Cordova
+
+gradle/wrapper/gradle-wrapper.properties
+
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.4-all.zip
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+
 
 4.- Generar el APK
 cordova build android
